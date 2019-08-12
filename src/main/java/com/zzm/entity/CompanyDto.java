@@ -9,8 +9,8 @@ import java.io.Serializable;
  * @version v1.0
  * @Description baipao
  * @encoding UTF-8
- * @date 2019-07-22
- * @time 19:42
+ * @date 2019-08-12
+ * @time 17:25
  * @修改记录 <pre>
  * 版本       修改人         修改时间         修改内容描述
  * --------------------------------------------------
@@ -19,16 +19,15 @@ import java.io.Serializable;
  * </pre>
  */
 @Data
-public class Blog implements Serializable {
+public class CompanyDto implements Serializable {
 
-    private static final long serialVersionUID = -7459907987773774588L;
+    private static final long serialVersionUID = 6950470307882802135L;
+
     private Long id;
 
-    private String title;
+    private String companyName;
 
-    private String content;
+    private String companyContent;
 
-    private UserTest userTest;
-
-
+    private CompanyDto superior;
 }
